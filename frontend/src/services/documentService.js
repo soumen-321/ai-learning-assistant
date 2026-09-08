@@ -7,7 +7,7 @@ const BASE_URL = RAW_URL.endsWith("/api") ? RAW_URL : `${RAW_URL}/api`;
 const API_URL = `${BASE_URL}/documents`;
 
 
-// Upload a new PDF file
+// Upload a new PDF file 
 export const uploadDocument = async (formData, token) => {
   const response = await fetch(`${API_URL}/upload`, {
     method: "POST",
