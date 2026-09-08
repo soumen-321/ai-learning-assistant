@@ -1,23 +1,3 @@
-// import React from "react";
-// import { Link } from "react-router-dom";
-
-// export default function NotFoundPage() {
-//   return (
-//     <div className="min-h-screen bg-slate-950 flex flex-col items-center justify-center gap-4 text-center p-4">
-//       <h1 className="text-7xl font-extrabold text-indigo-500">404</h1>
-//       <p className="text-slate-300 font-semibold">Page Not Found</p>
-//       <p className="text-slate-500 text-xs max-w-xs">The link you accessed does not exist or has been moved.</p>
-//       <Link
-//         to="/"
-//         className="mt-2 bg-indigo-600 hover:bg-indigo-500 text-white text-xs font-semibold px-5 py-2.5 rounded-xl transition-colors"
-//       >
-//         Return to Dashboard
-//       </Link>
-//     </div>
-//   );
-// }
-
-
 
 
 
