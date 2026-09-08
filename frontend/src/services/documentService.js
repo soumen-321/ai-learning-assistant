@@ -1,8 +1,14 @@
 
 
-// Dynamic Base URL: reads VITE_API_BASE_URL in production, falls back to localhost:5000 in dev
-const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api";
+// // Dynamic Base URL: reads VITE_API_BASE_URL in production, falls back to localhost:5000 in dev
+// const BASE_URL = import.meta.env.VITE_API_BASE_URL || "http://localhost:5000/api";
+// const API_URL = `${BASE_URL}/documents`;
+
+// Dynamic Base URL: reads VITE_API_URL or VITE_API_BASE_URL, falls back to localhost:5000
+const RAW_URL = import.meta.env.VITE_API_URL || import.meta.env.VITE_API_BASE_URL || "http://localhost:5000";
+const BASE_URL = RAW_URL.endsWith("/api") ? RAW_URL : `${RAW_URL}/api`;
 const API_URL = `${BASE_URL}/documents`;
+
 
 // Upload a new PDF file
 export const uploadDocument = async (formData, token) => {
